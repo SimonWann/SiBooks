@@ -1,0 +1,39 @@
+@import '@/base/base.sass'
+.book
+    padding: 10px 18px
+    border-radius: 6px
+    background: transparent
+    transition-property: background, border, box-shadow
+    transition-duration: 0.25s
+    box-shadow: 0px 0px 2px 1px transparent
+    width: max-content
+    max-width: 300px
+    user-select: none
+    white-space: pre-wrap
+    cursor: pointer
+    border: 1px solid transparent
+    +setFont(400, 16px, #fff)
+    .book-title
+        +setFlex(flex-start, baseline)
+        .book-title-value
+            +setFont(600, 22px, $silver100)
+            transition: color 0.25s
+        .book-author
+            margin-left: 10px
+            +setFont(400, 14px, $silver100)
+            transition: color 0.25s
+    .book-introduce
+        transition: color 0.25s
+        margin-top: 4px
+        +setFont(400, 12px, $silver100)
+    &:hover
+        background: $silver100
+        border: 1px solid $cocoa900
+        box-shadow: 0px 0px 2px 1px $black700
+        .book-title
+            .book-title-value
+                color: $cocoa900
+            .book-author
+                color: $cocoa900
+        .book-introduce
+            color: $cocoa900

@@ -1,0 +1,48 @@
+@import '@/base/base.sass'
+.home
+    background: $cocoa700
+    box-sizing: border-box
+    width: 100vw
+    height: 100vh
+    padding: 40px
+    +setFlex(flex-start, center, column)
+    .home-container
+        +setFlex(flex-satart, flex-start, column)
+        transform: translateX(-20%)
+        .home-title
+            +setFont(700, 30px , $silver100)
+            margin-left: 18px
+            margin-bottom: 26px
+            .home-title-text
+                display: inline-block
+                margin-right: 10px
+                &:hover
+                    text-decoration: underline
+            .home-title-icon
+                transform: translateY(3px)
+                display: inline-block
+        .book-container
+            .book-container-li
+                list-style: none
+        .home-book
+    .drag-container
+        width: 80%
+        height: 90%
+        border-radius: 10px
+        background: $silver100
+        position: absolute
+        border: 1px solid $silver900
+        +setFlex(center, center)
+        user-select: none
+        span
+            +setFont(700, 30px, $cocoa700)
+    .drag-container-enter
+        opacity: 0
+    .drag-container-enter-active
+        opacity: 1
+        transition: opacity 0.25s
+    .drag-container-exit
+        opacity: 1
+    .drag-container-exit-active
+        opacity: 0
+        transition: opacity 0.25s
