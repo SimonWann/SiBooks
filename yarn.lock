@@ -4543,6 +4543,11 @@ dom-helpers@^5.0.1:
     "@babel/runtime" "^7.8.7"
     csstype "^3.0.2"
 
+dom-parser@^0.1.6:
+  version "0.1.6"
+  resolved "https://registry.npmmirror.com/dom-parser/download/dom-parser-0.1.6.tgz#696c633b535ab3291424eb5bf58ee426f64632ca"
+  integrity sha1-aWxjO1NasykUJOtb9Y7kJvZGMso=
+
 dom-serializer@0:
   version "0.2.2"
   resolved "https://registry.nlark.com/dom-serializer/download/dom-serializer-0.2.2.tgz#1afb81f533717175d478655debc5e332d9f9bb51"
